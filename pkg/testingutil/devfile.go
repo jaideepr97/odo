@@ -1,8 +1,8 @@
 package testingutil
 
 import (
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
-	versionsCommon "github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	"github.com/jaideepr97/parser/pkg/devfile/data/common"
+	versionsCommon "github.com/jaideepr97/parser/pkg/devfile/data/common"
 )
 
 // TestDevfileData is a convenience data type used to mock up a devfile configuration

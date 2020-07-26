@@ -6,7 +6,8 @@ import (
 	"path/filepath"
 
 	//	devfileParser "github.com/cli-playground/devfile-parser/pkg/devfile/parser"
-	devfileParser "github.com/cli-playground/devfile-parser/pkg/devfile/parser"
+	"github.com/jaideepr97/parser"
+	devfileParser "github.com/jaideepr97/parser/pkg/devfile"
 
 	"github.com/openshift/odo/pkg/envinfo"
 	"github.com/openshift/odo/pkg/log"
@@ -97,7 +98,7 @@ func (do *DeployOptions) Validate() (err error) {
 	}
 	s.End(true)
 
-	do.devObj, err = devfileParser.ParseAndValidate(do.DevfilePath)
+	do.devObj, err = parser.ParseDevfile(do.DevfilePath)
 	if err != nil {
 		return err
 	}

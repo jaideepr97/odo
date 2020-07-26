@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser/data"
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	"github.com/jaideepr97/parser/pkg/devfile/data"
+	"github.com/jaideepr97/parser/pkg/devfile/data/common"
 	"k8s.io/klog"
 )
 

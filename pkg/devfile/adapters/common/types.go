@@ -4,7 +4,7 @@ import (
 	//devfileParser "github.com/cli-playground/devfile-parser/pkg/devfile/parser"
 	devfileParser "github.com/cli-playground/devfile-parser/pkg/devfile/parser"
 
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	"github.com/jaideepr97/parser/pkg/devfile/data/common"
 	"github.com/openshift/odo/pkg/envinfo"
 )
 

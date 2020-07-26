@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	"github.com/jaideepr97/parser/pkg/devfile/data/common"
 	adaptersCommon "github.com/openshift/odo/pkg/devfile/adapters/common"
 	"github.com/openshift/odo/pkg/log"
 	"github.com/openshift/odo/pkg/machineoutput"

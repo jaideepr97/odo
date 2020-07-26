@@ -3,7 +3,7 @@ package validate
 import (
 	"fmt"
 
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	"github.com/jaideepr97/parser/pkg/devfile/data/common"
 )
 
 // Errors

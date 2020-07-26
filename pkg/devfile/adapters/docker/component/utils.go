@@ -14,7 +14,7 @@ import (
 	"github.com/pkg/errors"
 	"k8s.io/klog"
 
-	versionsCommon "github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	versionsCommon "github.com/jaideepr97/parser/pkg/devfile/data/common"
 	"github.com/openshift/odo/pkg/devfile/adapters/common"
 	"github.com/openshift/odo/pkg/devfile/adapters/docker/storage"
 	"github.com/openshift/odo/pkg/devfile/adapters/docker/utils"

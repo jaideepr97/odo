@@ -6,7 +6,7 @@ import (
 	"text/tabwriter"
 
 	"github.com/cli-playground/devfile-parser/pkg/devfile/parser"
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	"github.com/jaideepr97/parser/pkg/devfile/data/common"
 	"github.com/openshift/odo/pkg/catalog"
 	"github.com/openshift/odo/pkg/log"
 	"github.com/openshift/odo/pkg/machineoutput"

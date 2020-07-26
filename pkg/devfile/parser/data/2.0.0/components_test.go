@@ -3,7 +3,7 @@ package version200
 import (
 	"testing"
 
-	common "github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	common "github.com/jaideepr97/parser/pkg/devfile/data/common"
 )
 
 func TestGetCommands(t *testing.T) {

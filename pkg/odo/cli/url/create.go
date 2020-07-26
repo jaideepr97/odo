@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser"
+	"github.com/jaideepr97/parser"
 	"github.com/openshift/odo/pkg/config"
 	adapterutils "github.com/openshift/odo/pkg/devfile/adapters/kubernetes/utils"
 	"github.com/openshift/odo/pkg/envinfo"
@@ -128,7 +128,7 @@ func (o *URLCreateOptions) Complete(name string, cmd *cobra.Command, args []stri
 		}
 
 		// Parse devfile and validate
-		devObj, err := parser.ParseAndValidate(o.DevfilePath)
+		devObj, err := parser.ParseDevfile(o.DevfilePath)
 		if err != nil {
 			return fmt.Errorf("fail to parse the devfile %s, with error: %s", o.DevfilePath, err)
 		}

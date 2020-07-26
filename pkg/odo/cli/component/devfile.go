@@ -7,7 +7,7 @@ import (
 
 	"github.com/openshift/odo/pkg/devfile/adapters"
 	//	"github.com/cli-playground/devfile-parser/pkg/devfile/parser"
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser"
+	"github.com/jaideepr97/parser"
 
 	"github.com/openshift/odo/pkg/envinfo"
 	"github.com/openshift/odo/pkg/machineoutput"
@@ -57,7 +57,7 @@ func (po *PushOptions) DevfilePush() error {
 
 func (po *PushOptions) devfilePushInner() (err error) {
 	// Parse devfile and validate
-	devObj, err := parser.ParseAndValidate(po.DevfilePath)
+	devObj, err := parser.ParseDevfile(po.DevfilePath)
 	if err != nil {
 		return err
 	}
@@ -200,7 +200,7 @@ func (do *DeployOptions) DevfileDeploy() (err error) {
 // DevfileComponentDelete deletes the devfile component
 func (ddo *DeployDeleteOptions) DevfileDeployDelete() error {
 	// Parse devfile
-	devObj, err := parser.ParseAndValidate(ddo.DevfilePath)
+	devObj, err := parser.ParseDevfile(ddo.DevfilePath)
 	if err != nil {
 		return err
 	}
@@ -272,7 +272,7 @@ func getComponentName(context string) (string, error) {
 // DevfileComponentDelete deletes the devfile component
 func (do *DeleteOptions) DevfileComponentDelete() error {
 	// Parse devfile and validate
-	devObj, err := parser.ParseAndValidate(do.devfilePath)
+	devObj, err := parser.ParseDevfile(do.devfilePath)
 	if err != nil {
 		return err
 	}

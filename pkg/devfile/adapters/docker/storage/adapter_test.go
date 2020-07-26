@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	devfileParser "github.com/cli-playground/devfile-parser/pkg/devfile/parser"
-	versionsCommon "github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	versionsCommon "github.com/jaideepr97/parser/pkg/devfile/data/common"
 	"github.com/openshift/odo/pkg/devfile/adapters/common"
 	adaptersCommon "github.com/openshift/odo/pkg/devfile/adapters/common"
 	"github.com/openshift/odo/pkg/lclient"

@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	devfileParser "github.com/cli-playground/devfile-parser/pkg/devfile/parser"
-	versionsCommon "github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	devfileParser "github.com/devfile/parser/"
+	versionsCommon "github.com/jaideepr97/parser/pkg/devfile/data/common"
 	adaptersCommon "github.com/openshift/odo/pkg/devfile/adapters/common"
 	"github.com/openshift/odo/pkg/kclient"
 	"github.com/openshift/odo/pkg/testingutil"

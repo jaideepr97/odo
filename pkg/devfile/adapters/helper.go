@@ -7,8 +7,7 @@ import (
 	"github.com/openshift/odo/pkg/devfile/adapters/docker"
 	"github.com/openshift/odo/pkg/devfile/adapters/kubernetes"
 
-	//devfileParser "github.com/cli-playground/devfile-parser/pkg/devfile/parser"
-	devfileParser "github.com/cli-playground/devfile-parser/pkg/devfile/parser"
+	devfileParser "github.com/devfile/parser/pkg/devfile"
 
 	"github.com/openshift/odo/pkg/kclient"
 	"github.com/openshift/odo/pkg/lclient"

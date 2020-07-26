@@ -11,8 +11,8 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/klog"
 
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser"
-	"github.com/cli-playground/devfile-parser/pkg/devfile/parser/data/common"
+	"github.com/jaideepr97/parser"
+	"github.com/jaideepr97/parser/pkg/devfile/data/common"
 	"github.com/openshift/odo/pkg/catalog"
 	"github.com/openshift/odo/pkg/component"
 	"github.com/openshift/odo/pkg/config"
@@ -832,7 +832,7 @@ func (co *CreateOptions) Validate() (err error) {
 func (co *CreateOptions) downloadProject(projectPassed string) error {
 	var project common.DevfileProject
 	// Parse devfile and validate
-	devObj, err := parser.ParseAndValidate(DevfilePath)
+	devObj, err := parser.ParseDevfile(DevfilePath)
 	if err != nil {
 		return err
 	}
